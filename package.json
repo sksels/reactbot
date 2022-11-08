@@ -1,0 +1,27 @@
+{
+  "name": "reactbot",
+  "version": "1.0.0",
+  "description": "React bot for webpage",
+  "main": "index.js",
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.13.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "backend": "nodemon index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "author": "Selva",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dialogflow": "^1.2.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
+  }
+}
