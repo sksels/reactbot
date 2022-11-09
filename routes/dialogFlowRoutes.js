@@ -1,5 +1,5 @@
 //Routes file
-const chatbot = require('../chatbot/Chatbot');
+const chatbot = require('../chatbot/chatbot');
 const dialogflow = require('dialogflow');
 const config = require('../config/keys');
 const { query } = require('express');
